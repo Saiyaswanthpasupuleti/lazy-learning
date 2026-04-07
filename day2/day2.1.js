@@ -9,7 +9,9 @@ function check(arr){
         else if(sum>0){
             right--
         }
+        else{
         left++
+        }
     }
 
 }
