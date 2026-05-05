@@ -40,3 +40,4 @@ function secondLargest(str){
     return secondLargest
 }
 // console.log(secondLargest('dfa12321afd'))
+// o(N) time complexity

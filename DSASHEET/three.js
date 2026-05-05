@@ -30,15 +30,16 @@ var isPalindrome = function(x) {
         res+=temp
         x=Math.floor(x/10)
     }
+    console.log('sdwdsd',res)
  
-    if(dummyRes===Number(res)){
-        return true
-    }
-    else{
-        return false
-    }
+    // if(dummyRes===Number(res)){
+    //     return true
+    // }
+    // else{
+    //     return false
+    // }
 };
-// console.log(isPalindrome(121))
+console.log(isPalindrome(-121))
 
 // console.log(Math.floor(121/10))
 
