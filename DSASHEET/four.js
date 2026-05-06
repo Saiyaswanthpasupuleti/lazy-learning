@@ -23,45 +23,17 @@
 // Input: x = 120
 // Output: 21
 
+function reverse(x){
+var rev=0;
+while(x!==0){
+    var temp=x%10;
+    x=Math.trunc(x/10);
+    if(x>2147483648) return 0;
+    if(x<-2147483648) return 0;
 
-
-var reverse = function(x) {
-  var rev=0;
-  while(x!==0){
-    let digit=x%10;
-    x=Math.trunc(x/10)
-    
-    if (rev > 214748364) return 0;
-    if (rev < -214748364) return 0;
-    rev=rev*10+digit
-  }
-  return rev
-    
-};
-// console.log(reverse(-123))
-
-
-
-function smallest(arr){
-    var smallest=arr[0]
-    for(let i=0;i<=arr.length-1;i++){
-        if(arr[i]<smallest){
-            smallest=arr[i]
-        }
-    }
-    return smallest
+    rev=rev*10+temp;
 
 }
-// console.log(smallest([3,2,1,0]))
-
-
-function largest(arr){
-    var largest=arr[0]
-    for(let i=0;i<=arr.length-1;i++){
-        if(arr[i]>largest){
-            largest=arr[i]
-        }
-    }
-    return largest
+return rev;
 }
-console.log(largest([3,2,1,0]))
+console.log(reverse(-123))
